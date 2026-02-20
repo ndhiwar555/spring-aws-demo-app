@@ -3,9 +3,14 @@ version: 0.2
 phases:
   install:
     commands:
+      - echo "Installing dependencies..."
       - cd /spring-aws-demo-app
+  build:
+    commands:
+      - echo "Building Spring Boot app..."
+      - mvn clean package -DskipTests
 
 artifacts:
   files:
-
-base-directory: /spring-aws-demo-app
+  
+  base-directory: /spring-aws-demo-app
