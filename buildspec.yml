@@ -13,4 +13,5 @@ phases:
 artifacts:
   files:
     - target/*.jar
-  base-directory: .
+  base-directory: spring-aws-demo-app
+  
