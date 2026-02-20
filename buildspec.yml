@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
-      - cd /spring-aws-demo-app
+
   build:
     commands:
       - echo "Building Spring Boot app..."
