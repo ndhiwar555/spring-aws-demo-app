@@ -2,22 +2,12 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - echo "Installing dependencies..."
-      # optional: install Maven if not in the CodeBuild image
-      # - mvn --version
-
+    runtime-versions:
+      java: corretto17
   build:
     commands:
       - echo "Building Spring Boot app..."
       - mvn clean package -DskipTests
-
-post_build:
-  commands:
-    - echo "Build completed. Listing target directory..."
-    - ls -l target
-
 artifacts:
   files:
     - target/*.jar
-  base-directory: .
