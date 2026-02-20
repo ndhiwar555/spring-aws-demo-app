@@ -1,3 +1,11 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - cd /spring-aws-demo-app
+
+artifacts:
+  files:
+
+base-directory: /spring-aws-demo-app
