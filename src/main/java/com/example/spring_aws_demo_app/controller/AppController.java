@@ -14,7 +14,7 @@ public class AppController {
         return "Hello, ".concat(name);
     }
 
-    @GetMapping(value = "health")
+    @GetMapping(value = "/health/status")
     public String chkHealth() {
         return "Up!!";
     }
