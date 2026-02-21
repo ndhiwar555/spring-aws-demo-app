@@ -13,4 +13,9 @@ public class AppController {
     public String getMsg(@PathVariable("name") String name) {
         return "Hello, ".concat(name);
     }
+
+    @GetMapping(value = "health")
+    public String chkHealth() {
+        return "Up!!";
+    }
 }
